@@ -1,3 +1,6 @@
+//Javascript Skilaverkefni 4
+// Elfar Snær Arnarson
+
 var data = [
     {
         item: 'USB',
