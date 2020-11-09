@@ -145,6 +145,7 @@ first_tr.appendChild(second_th).appendChild(priceTable);
 
 for(i in data){
     let trTable = document.createElement("tr");
+    // put id attribute on new elemnt so i can find it.
     trTable.setAttribute("id", i);
     trTable.style.display = "none";
 
@@ -168,7 +169,8 @@ for(i in data){
 // show data depending on slider value
 function showData(val){
     for(i in data){
-        if(slider.value <= data[i].price){
+        if(val <= data[i].price){
+            // get the id of previous created elements
            document.getElementById(i).style.display = 'table-row';
         } else {
             document.getElementById(i).style.display = 'none';
